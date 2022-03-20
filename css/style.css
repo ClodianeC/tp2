@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/* Polices liées */
+@import url('https://fonts.googleapis.com/css2?family=News+Cycle&family=Roboto+Condensed:wght@300;700&display=swap');
 
 /**
  * @author Clodiane Charette <2164515@csfoy.ca>
@@ -62,7 +64,7 @@ html {
 }
 .nav__link {
    display: inline-block;
-   padding: 0.25rem;
+   /*padding: 0.25rem;*/         /* correction menu 2 */
 }
 header picture {
    display: none;
@@ -140,6 +142,12 @@ body {
    list-style: none;
    padding: 0;
 }
+.nav__listItem{                        /* correction menu 3 */
+   margin-left: 1em;
+}
+.nav__listItem:first-child{            /* correction menu 3 */
+   margin-left: 0;
+}
 .nav__link:hover,
 .nav--footer .nav__link:hover {
    color: orangered
@@ -151,7 +159,7 @@ body {
    text-decoration: none;
    text-transform: uppercase;
    display: inline-block;
-   height: 3rem;
+   /* height: 3rem; */          /* correction menu 1 */
    padding-top: 0.5rem;
 }
 /* mise en forme de la navigation du footer */
@@ -203,8 +211,6 @@ footer {
 
 /* Charte typographique
    ========================================================================== */
-/* Polices liées */
-@import url('https://fonts.googleapis.com/css2?family=News+Cycle&family=Roboto+Condensed:wght@300;700&display=swap');
 
 /* Base décimale */
 html{
